@@ -1,0 +1,11 @@
+# Python artefacts
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Streamlit secrets – keep them private!
+.streamlit/secrets.toml
+
+# Local virtual‑envs
+.env
+.venv/
