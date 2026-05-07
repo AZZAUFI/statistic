@@ -6,7 +6,6 @@
 #  • Works on Streamlit Community Cloud (free tier).
 # --------------------------------------------------------------
 
-import os
 import httpx
 import pandas as pd
 import plotly.express as px
@@ -31,7 +30,7 @@ st.set_page_config(
 # -----------------------------------------------------------------
 try:
     API_KEY = st.secrets["api_key"]          # <-- secret name **api_key**
-except Exception as exc:
+except Exception:
     st.error(
         "❗️ Secret `api_key` not found. "
         "Add it in the Streamlit Cloud **Secrets** UI (Settings → Secrets)."
